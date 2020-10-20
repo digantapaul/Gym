@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chayan Gym</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("gym.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            /*border: 2px solid red;*/
+            display: inline-block;
+            height: 125px;
+            width: 150px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+        }
+
+        .mid {
+            /*border: 2px solid green;*/
+            display: inline-block;
+            position: absolute;
+            left: 400px;
+            top: 30px;
+            width: 45%;
+            background-color: teal;
+        }
+
+        .right {
+            /*border: 2px solid yellow;*/
+            display: inline-block;
+            position: absolute;
+            left: 1150px;
+            top: 30px;
+            height:50px;
+            width:200px;
+
+        }
+
+        .mid ul li {
+            display: inline;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: rgb(156, 152, 152);
+            text-decoration: underline;
+        }
+
+        .imgdiv img {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            left:35px;
+        }
+        h3{
+            text-align: center;
+            color:white;
+        }
+        .bab{
+            background-color: black;
+        }
+       .btn{
+           padding:10px;
+           font-family:sans-serif;
+           position:relative;
+           top:10px;
+           background-color: black;
+           color:white;
+           border-radius: 10px;
+        
+           
+       }
+       .btn:hover{
+           background-color: grey;
+       }
+       .btn:hover{
+           cursor:pointer;
+       }
+            .form{
+                height:420px;
+                width:400px;
+                border:4px solid rgb(116, 202, 116);
+                position:absolute;
+                top:175px;
+                color:white;
+                left:500px;
+                border-radius: 20PX;
+            }
+            .form h1{
+                text-align: center;
+                color:white;
+            }
+           .me{
+               padding: 10px 10px;
+           }
+           .me input{
+               width:100%;
+               height:30px;
+               border-radius:10px;
+               font-family: cursive;
+               font-weight: bold;
+               font-size: 16px;
+               color:black;
+           }
+          
+           .me input:hover{
+               background-color: teal;
+           }
+           #fg input{
+               background-color: black;
+               color:white;
+           }
+         .to{
+             color:red;
+             font-size: 40px;
+         }
+    </style>
+</head>
+
+<body>
+    <header class="head" id="head1">
+        <div class="left" id="div1">
+            <div class="imgdiv">
+                <img src="logo.png" alt="error">
+            </div>
+            <div class="bab">
+                    <h3>Chayan Gym</h3>
+            </div>
+        </div>
+        <div class="mid" id="div2">
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Caculator</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right" id="div3">
+            <button class="btn">contact us</button>
+            <button class="btn">email us</button>
+        </div>
+    </header>
+      <div class="form">
+       <h1>Welcome to <span class="to">Chayan Gym</span></h1>
+       <form action="nobackend.php" class="beyond">
+           
+            <div class="me">
+                <input type="text"placeholder="Enter Your Name">
+            </div>
+            <div class="me">
+                <input type="text"placeholder="Enter Your Age">
+            </div>
+            <div class="me">
+                <input type="text"placeholder="Enter Your Gender">
+            </div>
+            <div class="me">
+                <input type="email"placeholder="Enter Your Email">
+            </div>
+            <div class="me">
+                <input type="text"placeholder="Enter your Contact NO">
+            </div>
+            <div class="me"id="fg">
+                <input type="submit">
+            </div>
+       </form>
+      </div>
+</body>
+
+</html>
